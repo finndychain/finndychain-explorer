@@ -1,7 +1,7 @@
 {
-  "name": "gxb-explorer",
+  "name": "fychain-explorer",
   "version": "1.0.1",
-  "description": "gxchain explorer",
+  "description": "finndy chain explorer",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js --exec babel-node --watch server",
@@ -12,21 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gxchain/gxb-explorer.git"
+    "url": "git+https://github.com/finndy/fychain-explorer.git"
   },
   "engines": {
     "node": ">= 6.0.0"
   },
   "keywords": [
-    "gxchain",
+    "finndy",
     "explorer"
   ],
   "author": "davidlan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gxchain/gxb-explorer/issues"
+    "url": "https://github.com/finndy/fychain-explorer/issues"
   },
-  "homepage": "https://github.com/gxchain/gxb-explorer#readme",
+  "homepage": "https://github.com/finndy/fychain-explorer#readme",
   "dependencies": {
     "async": "^2.5.0",
     "bluebird": "^3.5.0",
@@ -37,7 +37,7 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "figlet": "^1.2.0",
-    "gxbjs": "^1.2.69",
+    "finndyjs": "^1.2.69",
     "hashjs": "^1.2.0",
     "jdenticon": "^1.7.2",
     "jquery": "^1.12.4",
