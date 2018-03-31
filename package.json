@@ -1,5 +1,5 @@
 {
-  "name": "fychain-explorer",
+  "name": "FinndyChain-explorer",
   "version": "1.0.1",
   "description": "finndy chain explorer",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finndy/fychain-explorer.git"
+    "url": "git+https://github.com/finndy/FinndyChain-explorer.git"
   },
   "engines": {
     "node": ">= 6.0.0"
@@ -24,9 +24,9 @@
   "author": "davidlan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/finndy/fychain-explorer/issues"
+    "url": "https://github.com/finndy/FinndyChain-explorer/issues"
   },
-  "homepage": "https://github.com/finndy/fychain-explorer#readme",
+  "homepage": "https://github.com/finndy/FinndyChain-explorer#readme",
   "dependencies": {
     "async": "^2.5.0",
     "bluebird": "^3.5.0",

@@ -1,5 +1,5 @@
 import express from 'express';
-import GXChainService from '../services/GXChainService';
+import finndyChainService from '../services/finndyChainService';
 import LevelDBService from '../services/LevelDBService';
 import HoldrankService from '../services/HoldrankService';
 import jdenticon from 'jdenticon';
@@ -12,7 +12,7 @@ let router = express.Router();
  */
 
 router.get('/supply', function (req, res) {
-    GXChainService.gxs_supply().then(function (gxs) {
+    finndyChainService.gxs_supply().then(function (gxs) {
         res.send({
             total_supply: gxs.current_supply / 100000,
             circulating_supply: 60000000
@@ -24,7 +24,7 @@ router.get('/supply', function (req, res) {
  * 区块查询
  */
 router.get('/block/:block_height', function (req, res) {
-    GXChainService.fetch_block(req.params.block_height).then((block) => {
+    finndyChainService.fetch_block(req.params.block_height).then((block) => {
         res.send(block);
     }).catch(() => {
         res.send({});
@@ -46,7 +46,7 @@ router.get('/transaction/:tx_id', function (req, res) {
  * 账户查询
  */
 router.get('/account/:account_id_or_name', function (req, res) {
-    GXChainService.fetch_full_account(req.params.account_id_or_name).then((account) => {
+    finndyChainService.fetch_full_account(req.params.account_id_or_name).then((account) => {
         res.send(account.length > 0 ? account[0][1] : {});
     }).catch(() => {
         res.send({});
@@ -57,7 +57,7 @@ router.get('/account/:account_id_or_name', function (req, res) {
  * 账户余额查询
  */
 router.get('/account_balance/:account_id_or_name', function (req, res) {
-    GXChainService.fetch_account_balance(req.params.account_id_or_name).then((balances) => {
+    finndyChainService.fetch_account_balance(req.params.account_id_or_name).then((balances) => {
         res.send(balances);
     }).catch(() => {
         res.send({});
@@ -77,7 +77,7 @@ router.get('/header/:account_name', function (req, res) {
  * 产品信息查询
  */
 router.get('/product/:product_id', function (req, res) {
-    GXChainService.fetch_product(req.params.product_id).then((product) => {
+    finndyChainService.fetch_product(req.params.product_id).then((product) => {
         res.send(JSON.stringify(product));
     }).catch(() => {
         res.send({});

@@ -1,6 +1,6 @@
 import Promise from 'bluebird';
 import LevelDBService from '../services/LevelDBService';
-import GXChainService from '../services/GXChainService';
+import finndyChainService from '../services/finndyChainService';
 
 let current_block_height = 0; // 当前已同步区块高度
 let max_block_height = 0;  // 最新不可逆区块高度
@@ -47,7 +47,7 @@ export default {
                         return;
                     }
                     block.transactions.forEach((transaction, j) => {
-                        let tx_id = block.transaction_ids[j]; // GXChain based api will return transaction_ids as an array
+                        let tx_id = block.transaction_ids[j]; // finndyChain based api will return transaction_ids as an array
 
                         // Logic for Graphene based chain, we should calculate tx_id ourself
                         // Please do know that this will not work in browser at this time, so do the calc in node
@@ -80,7 +80,7 @@ export default {
     batch_sync_block (start, length) {
         let promises = [];
         for (var i = 0; i < length; ++i) {
-            promises.push(GXChainService.fetch_block(parseInt(start) + i));
+            promises.push(finndyChainService.fetch_block(parseInt(start) + i));
         }
         return Promise.all(promises);
     },

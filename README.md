@@ -1,6 +1,6 @@
 # 发源地区块链浏览器(FinndyChain Explorer)
 
-Finndy区块链浏览器是构建在FinndyChain上的一个查询工具,提供区块(Block)查询,交易(Transaction)查询和账户(Account)查询功能
+发源地区块链浏览器是构建在FinndyChain上的一个查询工具,提供区块(Block)查询,交易(Transaction)查询和账户(Account)查询功能
 
 FinndyChain Explorer is a search tool build on FinndyChain, supporting block search, transaction search, and account search.
 
@@ -34,7 +34,7 @@ nvm use v6
 ## 克隆项目 Clone project
 
 ```
-git clone https://github.com/finndy/fychain-explorer.git
+git clone https://github.com/finndy/FinndyChain-explorer.git
 ```
 
 ## 依赖安装 Install dependencies

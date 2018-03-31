@@ -5,8 +5,8 @@ import http from 'http';
 
 import path from 'path';
 import Promise from 'bluebird';
-import { Apis, Manager } from 'gxbjs-ws';
-import { ChainStore } from 'gxbjs';
+import { Apis, Manager } from 'finndyjs-ws';
+import { ChainStore } from 'finndyjs';
 import BlockSyncTask from './tasks/BlockSyncTask';
 import HoldrankTask from './tasks/HoldrankTask';
 import LevelDBService from './services/LevelDBService';
@@ -18,7 +18,7 @@ import webpackConfig from '../build/webpack.dev.conf';
 import webpack from 'webpack';
 import config from '../config';
 
-require('debug')('gxb-explorer:server');
+require('debug')('finndy-explorer:server');
 
 let autoOpenBrowser = !!config.dev.autoOpenBrowser;
 let app = express();
@@ -190,7 +190,7 @@ let startServer = function () {
             }
         });
     });
-    figlet('GXB-EXPLORER', 'Standard', function (err, text) {
+    figlet('finndy-EXPLORER', 'Standard', function (err, text) {
         if (err) {
             console.error(err);
         }

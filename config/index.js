@@ -10,13 +10,13 @@ module.exports = {
     assetsPublicPath: '/',
     productionSourceMap: false,
     witnesses: [
-      // "wss://node1.gxb.io",
-      "wss://node5.gxb.io",
-      "wss://node8.gxb.io",
-      "wss://node11.gxb.io",
-      "wss://node15.gxb.io",
-      "wss://node16.gxb.io",
-      "wss://node17.gxb.io"
+      // "wss://node1.finndy.io",
+      "wss://node5.finndy.io",
+      "wss://node8.finndy.io",
+      "wss://node11.finndy.io",
+      "wss://node15.finndy.io",
+      "wss://node16.finndy.io",
+      "wss://node17.finndy.io"
     ],
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -37,10 +37,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     witnesses: [
-      // "wss://node1.gxb.io",
-      "wss://node5.gxb.io",
-      "wss://node8.gxb.io",
-      "wss://node11.gxb.io"
+      // "wss://node1.finndy.io",
+      "wss://node5.finndy.io",
+      "wss://node8.finndy.io",
+      "wss://node11.finndy.io"
     ],
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

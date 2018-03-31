@@ -1,4 +1,4 @@
-import { Apis } from 'gxbjs-ws';
+import { Apis } from 'finndyjs-ws';
 import fs from 'fs';
 import os from 'os';
 import cron from 'cron';

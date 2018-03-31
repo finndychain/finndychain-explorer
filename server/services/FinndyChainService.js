@@ -1,6 +1,6 @@
 import Promise from 'bluebird';
-import { Apis } from 'gxbjs-ws';
-import { ChainStore } from 'gxbjs';
+import { Apis } from 'finndyjs-ws';
+import { ChainStore } from 'finndyjs';
 import Immutable from 'immutable';
 
 /**
