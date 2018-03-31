@@ -1,14 +1,9 @@
 # 发源地区块链浏览器(FinndyChain Explorer)
 
-Finndy区块链浏览器是构建在公信链(FinndyChain)上的一个查询工具,提供区块(Block)查询,交易(Transaction)查询和账户(Account)查询功能
+Finndy区块链浏览器是构建在FinndyChain上的一个查询工具,提供区块(Block)查询,交易(Transaction)查询和账户(Account)查询功能
 
 FinndyChain Explorer is a search tool build on FinndyChain, supporting block search, transaction search, and account search.
 
-> 任何一方可以无偿使用此浏览器或进行二次开发, 但请注明项目来源:Powered by GXB
-
-> Please keep our copyright "Powered by GXB" if you want use it for free
-
-Thanks [shuang-guo](https://github.com/shuang-guo) for providing english translation
 
 ## 功能 Function
 - [x] 区块同步 Block synchronization
@@ -39,7 +34,7 @@ nvm use v6
 ## 克隆项目 Clone project
 
 ```
-git clone https://github.com/FinndyChain/gxbox.git
+git clone https://github.com/finndy/fychain-explorer.git
 ```
 
 ## 依赖安装 Install dependencies
@@ -68,7 +63,7 @@ NODE_ENV=production node server-dist/index.js
 或者使用pm2启动(else use pm2 to start)
 
 ```
-NODE_ENV=production pm2 start server-dist/index.js --name gxb-explorer
+NODE_ENV=production pm2 start server-dist/index.js --name fychain-explorer
 ```
 
 ## API说明 API description
